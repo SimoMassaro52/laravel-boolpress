@@ -1,11 +1,14 @@
 <template>
-    <ol>
-        <!-- Cicliamo i titoli dei post con il vecchio v-for di vue -->
-        <li v-for="(post, index) in posts" :key="index">
-            <h2>{{post.title}}</h2>
-            <p>{{post.content}}</p>
-        </li>
-    </ol>
+    <div>
+        <ol>
+            <!-- Cicliamo i titoli dei post con il vecchio v-for di vue -->
+            <li v-for="(post, index) in posts" :key="index">
+                <h2>{{post.title}}</h2>
+                <p>{{post.content}}</p>
+            </li>
+        </ol>
+        <h1>CIAO</h1>
+    </div>
 </template>
 
 <script>
