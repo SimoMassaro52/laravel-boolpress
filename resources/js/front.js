@@ -34,9 +34,12 @@ window.Vue = require('vue');
 
 //Facciamo l'import del file App.vue presente in resources/js
 import App from './App.vue';
+import router from './router';
 
 const app = new Vue({
     el: '#app',
     //Aggiungiamo il render 
-    render: h => h(App)
+    render: h => h(App),
+    //Per utilizzare effettivamente il gestore vue-router dobbiamo importarlo
+    router
 });
